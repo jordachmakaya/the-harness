@@ -1,0 +1,17 @@
+{
+  "name": "shokunin-blueprint",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "description": "Shokunin V1 Blueprint Project Harness",
+  "dependencies": {
+    "consola": "^3.4.0",
+    "ora": "^8.2.0",
+    "chalk": "^5.4.1"
+  },
+  "devDependencies": {
+    "jscpd": "^3.5.18",
+    "knip": "^5.27.4"
+  },
+  "packageManager": "pnpm@9.12.0"
+}

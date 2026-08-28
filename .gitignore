@@ -1,0 +1,32 @@
+# Private harness and proprietary notes
+.shokunin/
+
+# Upstream reference fork
+deepseek-harness-master/
+
+# Dependencies
+node_modules/
+vendor/
+
+# Build and cache artifacts
+dist/
+build/
+coverage/
+.turbo/
+.cache/
+.next/
+*.tsbuildinfo
+
+# OS & Environment files
+.DS_Store
+*.Zone.Identifier
+*.Zone.Identifier*
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
