@@ -1,0 +1,7 @@
+.shokunin/
+node_modules/
+pnpm-lock.yaml
+CLAUDE.md
+dist/
+coverage/
+.next/

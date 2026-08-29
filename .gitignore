@@ -7,15 +7,23 @@ deepseek-harness-master/
 # Dependencies
 node_modules/
 vendor/
+.pnpm-store/
 
 # Build and cache artifacts
 dist/
 build/
 coverage/
 .turbo/
+**/.turbo/
 .cache/
 .next/
+**/.next/
+**/out/
+**/coverage/
 *.tsbuildinfo
+packages/*/src/**/*.js
+packages/*/src/**/*.d.ts
+packages/*/src/**/*.map
 
 # OS & Environment files
 .DS_Store
@@ -23,7 +31,14 @@ coverage/
 *.Zone.Identifier*
 .env
 .env.local
+.env.*
 .env.*.local
+!.env.example
+.vercel/
+
+# Local credentials and certificates
+*.pem
+*.key
 
 # Logs
 *.log

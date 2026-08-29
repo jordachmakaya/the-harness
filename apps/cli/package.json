@@ -1,0 +1,23 @@
+{
+  "name": "@the-harness/cli",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "the-harness": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "start": "node ./dist/index.js",
+    "test": "vitest run --passWithNoTests"
+  },
+  "dependencies": {
+    "@hardmachinelabs/zod-config": "catalog:",
+    "commander": "catalog:"
+  },
+  "devDependencies": {
+    "@hardmachinelabs/env-sync": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  }
+}
