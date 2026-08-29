@@ -4,14 +4,28 @@
   "type": "module",
   "private": true,
   "description": "Shokunin V1 Blueprint Project Harness",
+  "scripts": {
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "build": "turbo run build",
+    "format:check": "prettier --check .",
+    "architecture:check": "depcruise --config .dependency-cruiser.cjs apps/cli/src packages --output-type err",
+    "duplicates:check": "jscpd apps/cli/src packages --min-lines 10 --min-tokens 50 --threshold 0 --reporters console",
+    "audit:production": "pnpm audit --prod --audit-level high"
+  },
   "dependencies": {
-    "consola": "^3.4.0",
-    "ora": "^8.2.0",
-    "chalk": "^5.4.1"
+    "consola": "catalog:",
+    "ora": "catalog:",
+    "chalk": "catalog:"
   },
   "devDependencies": {
-    "jscpd": "^3.5.18",
-    "knip": "^5.27.4"
+    "@stryker-mutator/core": "catalog:",
+    "dependency-cruiser": "catalog:",
+    "jscpd": "catalog:",
+    "knip": "catalog:",
+    "prettier": "catalog:",
+    "turbo": "catalog:",
+    "vitest": "catalog:"
   },
   "packageManager": "pnpm@9.12.0"
 }
